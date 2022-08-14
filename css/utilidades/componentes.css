@@ -9,6 +9,8 @@
 }
 
 .botao {
+  border: none;
+  cursor: pointer;
   padding: 16px 32px;
   display: inline-block;
   border-radius: 4px;
