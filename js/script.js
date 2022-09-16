@@ -30,3 +30,17 @@ perguntas.forEach((pergunta) => {
     button.setAttribute("aria-expanded", ativo);
   });
 });
+
+// galeria de imagens
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+galeria.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const { matches } = matchMedia("(min-width: 1000px)");
+    if (matches) {
+      const img = event.currentTarget;
+      galeriaContainer.append(img);
+    }
+  });
+});
